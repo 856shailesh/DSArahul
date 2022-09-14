@@ -37,8 +37,6 @@ public class LL1 {
     }
 
     //Search for a node with value
-
-
     public static void main(String[] args) {
         LL1 l = new LL1();
         l.addNodeatEnd(10);
