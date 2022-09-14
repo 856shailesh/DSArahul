@@ -4,7 +4,7 @@ package recursion;
 public class Factorial {
 
     public static void main(String[] args) {
-        int fact = 0;
+        int fact = 4;
         int sum = factorial(fact);
         System.out.println(sum);
     }
