@@ -1,4 +1,4 @@
-package practice;
+package practice.LinkedList;
 
 public class LL1 {
 
@@ -26,6 +26,7 @@ public class LL1 {
             newNode.next = null;
             tail = newNode;
         }
+
     }
 
     public void printLL(Node headNode){

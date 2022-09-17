@@ -38,13 +38,13 @@ public class LinkedListExcercise {
     }
 
     public void addNodeatIndex(int val, int index) {
+        Node newNode = new Node(val);
         Node current = head;
         int count = 1;
         while (current != null && count != index - 1) {
             current = current.next;
             count++;
         }
-        Node newNode = new Node(val);
         Node temp = current.next;
         current.next = newNode;
         newNode.next = temp;
@@ -80,7 +80,7 @@ public class LinkedListExcercise {
         else {
             Node current = head;
             Node previous = null;
-            while (current != null && current.val != value){
+            while (current != null && current.val != value) {
                 previous = current;
                 current = current.next;
             }
