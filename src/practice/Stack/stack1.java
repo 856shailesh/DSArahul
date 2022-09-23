@@ -13,7 +13,21 @@ public class stack1 {
         s.push(6);
         System.out.println(s);
         //reverse(s);
-        insertatIndex(2, 13);
+        //insertatIndex(2, 13);
+        minimun();
+    }
+
+    private static void minimun() {
+        int t = s.peek();
+        Stack<Integer> temp = new Stack<>();
+        while (!s.isEmpty()){
+            if (s.pop() > t) {
+                t = s.pop();
+                temp.push(s.pop());
+            }
+            else temp.push(s.pop());
+            System.out.println("Minimum element is " + t);
+        }
     }
 
     private static void insertatIndex(int index, int value) {
